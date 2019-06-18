@@ -6,8 +6,8 @@
 		{
 			var productRepository = new ProductRepository();
 			var products = productRepository.GetAllProducts();
-			//var demo = new GridViewDemo();
-			var demo = new EPPlusDemo();
+			var demo = new GridViewDemo();
+			//var demo = new EPPlusDemo();
 			demo.GenerateAndOpenFile(products);
 		}
 	}
