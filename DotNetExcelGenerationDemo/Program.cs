@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DotNetExcelGenerationDemo
+﻿namespace DotNetExcelGenerationDemo
 {
 	class Program
 	{
 		static void Main(string[] args)
 		{
+			var productRepository = new ProductRepository();
+			var products = productRepository.GetAllProducts();
+			//var demo = new GridViewDemo();
+			var demo = new EPPlusDemo();
+			demo.GenerateAndOpenFile(products);
 		}
 	}
 }
